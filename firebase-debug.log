@@ -1,0 +1,138 @@
+[debug] [2021-05-16T04:03:34.577Z] ----------------------------------------------------------------------
+[debug] [2021-05-16T04:03:34.584Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chauh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-05-16T04:03:34.585Z] CLI Version:   9.10.2
+[debug] [2021-05-16T04:03:34.585Z] Platform:      win32
+[debug] [2021-05-16T04:03:34.586Z] Node Version:  v14.15.1
+[debug] [2021-05-16T04:03:34.588Z] Time:          Sun May 16 2021 09:33:34 GMT+0530 (India Standard Time)
+[debug] [2021-05-16T04:03:34.589Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-16T04:03:34.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-16T04:03:34.616Z] > authorizing via signed-in user (chauhan022jayk@gmail.com)
+[debug] [2021-05-16T04:03:34.616Z] [iam] checking project tesla-clone-775b7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-16T04:03:34.620Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-16T04:03:34.621Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-16T04:03:36.076Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 16 May 2021 04:03:37 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:03:36.105Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tesla-clone-775b7:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-16T04:03:40.568Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 16 May 2021 04:03:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1375","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:03:40.573Z] > refreshing access token with scopes: []
+[debug] [2021-05-16T04:03:40.573Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-16T04:03:41.463Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 16 May 2021 04:03:42 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:03:41.489Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 [none]
+[debug] [2021-05-16T04:03:46.627Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 200
+[debug] [2021-05-16T04:03:46.628Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 {"projectId":"tesla-clone-775b7","projectNumber":"1054596264330","displayName":"tesla-clone","name":"projects/tesla-clone-775b7","resources":{"hostingSite":"tesla-clone-775b7"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'tesla-clone-775b7'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-16T04:03:46.646Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-16T04:03:46.647Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-16T04:03:47.976Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 16 May 2021 04:03:49 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:03:47.991Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tesla-clone-775b7/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-16T04:04:00.648Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+[debug] [2021-05-16T04:14:43.090Z] ----------------------------------------------------------------------
+[debug] [2021-05-16T04:14:43.097Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chauh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-16T04:14:43.098Z] CLI Version:   9.10.2
+[debug] [2021-05-16T04:14:43.098Z] Platform:      win32
+[debug] [2021-05-16T04:14:43.099Z] Node Version:  v14.15.1
+[debug] [2021-05-16T04:14:43.101Z] Time:          Sun May 16 2021 09:44:43 GMT+0530 (India Standard Time)
+[debug] [2021-05-16T04:14:43.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-16T04:14:43.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-16T04:14:43.124Z] > authorizing via signed-in user (chauhan022jayk@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\chauh\Desktop\jay\web dev project\tesla-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tesla-clone-775b7. 
+[debug] [2021-05-16T04:14:50.367Z] > refreshing access token with scopes: []
+[debug] [2021-05-16T04:14:50.368Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-16T04:14:51.896Z] <<< HTTP RESPONSE 200 {"date":"Sun, 16 May 2021 04:14:53 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:14:51.928Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 [none]
+[debug] [2021-05-16T04:14:53.884Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 200
+[debug] [2021-05-16T04:14:53.885Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tesla-clone-775b7 {"projectId":"tesla-clone-775b7","projectNumber":"1054596264330","displayName":"tesla-clone","name":"projects/tesla-clone-775b7","resources":{"hostingSite":"tesla-clone-775b7"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-05-16T04:15:13.192Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-05-16T04:15:14.593Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-05-16T04:15:14.594Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.6.1","browserURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.tgz"},"live":{"version":"8.6","browserURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.6.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.6.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.6.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\chauh\Desktop\jay\web dev project\tesla-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=684549788&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-05-16T04:15:31.262Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"2e24945a923941111415","redirect_uri":"http://localhost:9005","state":"684549788"}
+[debug] [2021-05-16T04:15:32.480Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 16 May 2021 04:15:33 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"48b1f60a7be69350c0f9e4ed7dee9a5b\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"5CEA:40A4:56EE8F:60F6D7:60A09C65"}
+[debug] [2021-05-16T04:15:32.487Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-05-16T04:15:34.118Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-05-16T04:15:34.119Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jay75chauhan","id":66429052,"node_id":"MDQ6VXNlcjY2NDI5MDUy","avatar_url":"https://avatars.githubusercontent.com/u/66429052?v=4","gravatar_id":"","url":"https://api.github.com/users/jay75chauhan","html_url":"https://github.com/jay75chauhan","followers_url":"https://api.github.com/users/jay75chauhan/followers","following_url":"https://api.github.com/users/jay75chauhan/following{/other_user}","gists_url":"https://api.github.com/users/jay75chauhan/gists{/gist_id}","starred_url":"https://api.github.com/users/jay75chauhan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jay75chauhan/subscriptions","organizations_url":"https://api.github.com/users/jay75chauhan/orgs","repos_url":"https://api.github.com/users/jay75chauhan/repos","events_url":"https://api.github.com/users/jay75chauhan/events{/privacy}","received_events_url":"https://api.github.com/users/jay75chauhan/received_events","type":"User","site_admin":false,"name":"jay chauhan","company":null,"blog":"https://www.instagram.com/jay_chauhan_75/","location":"gujrat","email":null,"hireable":true,"bio":"life was like a box of chocolates. You never know what you're gonna get.”","twitter_username":"jay75chauhan","public_repos":22,"public_gists":0,"followers":8,"following":31,"created_at":"2020-06-04T14:47:15Z","updated_at":"2021-05-14T11:47:56Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":23819,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as jay75chauhan 
+[info] 
+[debug] [2021-05-16T04:16:21.959Z] >>> [apiv2][query] GET https://api.github.com/repos/jay75chauhan/actions/secrets/public-key type=owner
+[debug] [2021-05-16T04:16:21.964Z] >>> [apiv2][query] GET https://api.github.com/repos///actions/secrets/public-key type=owner
+[debug] [2021-05-16T04:16:21.967Z] >>> [apiv2][query] GET https://api.github.com/repos/tesla-clone/actions/secrets/public-key type=owner
+[debug] [2021-05-16T04:16:23.090Z] <<< [apiv2][status] GET https://api.github.com/repos/jay75chauhan/actions/secrets/public-key 404
+[debug] [2021-05-16T04:16:23.091Z] <<< [apiv2][body] GET https://api.github.com/repos/jay75chauhan/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-05-16T04:16:23.103Z] <<< [apiv2][status] GET https://api.github.com/repos/tesla-clone/actions/secrets/public-key 404
+[debug] [2021-05-16T04:16:23.104Z] <<< [apiv2][body] GET https://api.github.com/repos/tesla-clone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-05-16T04:16:23.499Z] <<< [apiv2][status] GET https://api.github.com/repos///actions/secrets/public-key 404
+[debug] [2021-05-16T04:16:23.500Z] <<< [apiv2][body] GET https://api.github.com/repos///actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-05-16T04:17:02.049Z] >>> [apiv2][query] GET https://api.github.com/repos/jay75chauhan/tesla-clone/actions/secrets/public-key type=owner
+[debug] [2021-05-16T04:17:03.313Z] <<< [apiv2][status] GET https://api.github.com/repos/jay75chauhan/tesla-clone/actions/secrets/public-key 200
+[debug] [2021-05-16T04:17:03.313Z] <<< [apiv2][body] GET https://api.github.com/repos/jay75chauhan/tesla-clone/actions/secrets/public-key {"key_id":"568250167242549743","key":"GDGU9HwQ67gkvelW63lU0CE5a6/TFVYloFBUzyVrlhU="}
+[debug] [2021-05-16T04:17:03.317Z] >>> [apiv2][query] GET https://api.github.com/repos/jay75chauhan/tesla-clone [none]
+[debug] [2021-05-16T04:17:04.953Z] <<< [apiv2][status] GET https://api.github.com/repos/jay75chauhan/tesla-clone 200
+[debug] [2021-05-16T04:17:04.954Z] <<< [apiv2][body] GET https://api.github.com/repos/jay75chauhan/tesla-clone {"id":367705834,"node_id":"MDEwOlJlcG9zaXRvcnkzNjc3MDU4MzQ=","name":"tesla-clone","full_name":"jay75chauhan/tesla-clone","private":false,"owner":{"login":"jay75chauhan","id":66429052,"node_id":"MDQ6VXNlcjY2NDI5MDUy","avatar_url":"https://avatars.githubusercontent.com/u/66429052?v=4","gravatar_id":"","url":"https://api.github.com/users/jay75chauhan","html_url":"https://github.com/jay75chauhan","followers_url":"https://api.github.com/users/jay75chauhan/followers","following_url":"https://api.github.com/users/jay75chauhan/following{/other_user}","gists_url":"https://api.github.com/users/jay75chauhan/gists{/gist_id}","starred_url":"https://api.github.com/users/jay75chauhan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jay75chauhan/subscriptions","organizations_url":"https://api.github.com/users/jay75chauhan/orgs","repos_url":"https://api.github.com/users/jay75chauhan/repos","events_url":"https://api.github.com/users/jay75chauhan/events{/privacy}","received_events_url":"https://api.github.com/users/jay75chauhan/received_events","type":"User","site_admin":false},"html_url":"https://github.com/jay75chauhan/tesla-clone","description":null,"fork":false,"url":"https://api.github.com/repos/jay75chauhan/tesla-clone","forks_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/forks","keys_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/teams","hooks_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/hooks","issue_events_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/issues/events{/number}","events_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/events","assignees_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/assignees{/user}","branches_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/branches{/branch}","tags_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/tags","blobs_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/git/refs{/sha}","trees_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/statuses/{sha}","languages_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/languages","stargazers_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/stargazers","contributors_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/contributors","subscribers_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/subscribers","subscription_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/subscription","commits_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/commits{/sha}","git_commits_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/git/commits{/sha}","comments_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/comments{/number}","issue_comment_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/issues/comments{/number}","contents_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/contents/{+path}","compare_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/merges","archive_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/downloads","issues_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/issues{/number}","pulls_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/pulls{/number}","milestones_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/milestones{/number}","notifications_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/labels{/name}","releases_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/releases{/id}","deployments_url":"https://api.github.com/repos/jay75chauhan/tesla-clone/deployments","created_at":"2021-05-15T18:39:30Z","updated_at":"2021-05-15T18:40:55Z","pushed_at":"2021-05-15T18:40:52Z","git_url":"git://github.com/jay75chauhan/tesla-clone.git","ssh_url":"git@github.com:jay75chauhan/tesla-clone.git","clone_url":"https://github.com/jay75chauhan/tesla-clone.git","svn_url":"https://github.com/jay75chauhan/tesla-clone","homepage":null,"size":5057,"stargazers_count":0,"watchers_count":0,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-05-16T04:17:04.959Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-16T04:17:04.960Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-16T04:17:07.209Z] <<< HTTP RESPONSE 200 {"date":"Sun, 16 May 2021 04:17:08 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:17:07.238Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/tesla-clone-775b7/serviceAccounts  
+ {"accountId":"github-action-367705834","serviceAccount":{"displayName":"GitHub Actions (jay75chauhan/tesla-clone)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository jay75chauhan/tesla-clone"}}
+[debug] [2021-05-16T04:17:21.134Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sun, 16 May 2021 04:17:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-16T04:17:21.135Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Service account github-action-367705834 already exists within project projects/tesla-clone-775b7.","status":"ALREADY_EXISTS","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"projects/tesla-clone-775b7/serviceAccounts/github-action-367705834@tesla-clone-775b7.iam.gserviceaccount.com"}]}}
+[debug] [2021-05-16T04:17:21.138Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/tesla-clone-775b7/serviceAccounts/github-action-367705834@tesla-clone-775b7.iam.gserviceaccount.com  
+ 
+[debug] [2021-05-16T04:17:21.139Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tesla-clone-775b7:getIamPolicy  
+ 
+[debug] [2021-05-16T04:17:34.145Z] Error: getaddrinfo ENOTFOUND iam.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND iam.googleapis.com

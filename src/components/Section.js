@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Pulse from "react-reveal/Pulse";
 
 function Section({
   title,
@@ -9,23 +11,26 @@ function Section({
   backgroundImg,
 }) {
   return (
-    <Wrap bgImage={backgroundImg}>
-      <Fade bottom>
-        <ItemText>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </ItemText>
-      </Fade>
-      <Button>
-        <Fade bottom>
-          <ButtonGroup>
-            <LeftButton>{leftBtnText}</LeftButton>
-            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
-          </ButtonGroup>
-        </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
-      </Button>
-    </Wrap>
+    <Pulse>
+      <Wrap bgImage={backgroundImg}>
+        <Zoom>
+          <ItemText>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </ItemText>
+        </Zoom>
+
+        <Button>
+          <Fade bottom>
+            <ButtonGroup>
+              <LeftButton>{leftBtnText}</LeftButton>
+              {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+            </ButtonGroup>
+          </Fade>
+          <DownArrow src="/images/down-arrow.svg" />
+        </Button>
+      </Wrap>
+    </Pulse>
   );
 }
 
