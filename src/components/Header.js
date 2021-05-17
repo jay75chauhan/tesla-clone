@@ -40,10 +40,10 @@ function Header() {
       </Menu>
 
       <RightMenu>
-        <a href="#">
+        <a href="/#">
           <span>Shop</span>
         </a>
-        <a href="#">
+        <a href="/#">
           <span>Tesla Account</span>
         </a>
         <IconButton>
@@ -60,21 +60,21 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li key={index}>
-              <a href="#">{car}</a>
+              <a href="/#">{car}</a>
             </li>
           ))}
 
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="/#">Used Inventory</a>
         </li>
         <li>
-          <a href="#">Trade-in</a>
+          <a href="/#">Trade-in</a>
         </li>
         <li>
-          <a href="#">Cybertruck</a>
+          <a href="/#">Cybertruck</a>
         </li>
         <li>
-          <a href="#">Roadaster</a>
+          <a href="/#">Roadaster</a>
         </li>
       </BurgerNav>
     </Container>
