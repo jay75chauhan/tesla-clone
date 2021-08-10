@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
+
 import { IconButton } from "@material-ui/core";
 import { useState } from "react";
+import CloseIcon from "@material-ui/icons/Close";
+import MenuIcon from "@material-ui/icons/Menu";
+
 import { selectCars } from "../features/car/carSlice";
 import { useSelector } from "react-redux";
 
@@ -188,4 +190,5 @@ const CloseWrapper = styled.div`
 
 const CustomeClose = styled(CloseIcon)`
   cursor: pointer;
+  /* <FontAwesomeIcon icon={faTimes} /> */
 `;
